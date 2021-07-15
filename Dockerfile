@@ -20,7 +20,7 @@ ENV FUSE_PUBLIC_STOMP_SSL_PORT 61614
 # Install fuse in the image.
 COPY installnew.sh /opt/jboss/installnew.sh
 #RUN chmod 777 install.sh
-RUN /opt/jboss/installnew.sh
+RUN /opt/jboss/install.sh
 
 EXPOSE 8181 8101 1099 44444 61616 1883 5672 61613 61617 8883 5671 61614
 
